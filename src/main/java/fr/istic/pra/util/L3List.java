@@ -112,14 +112,13 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 élement à ajouter
 		 */
 		public void addLeft(T v) {
-			if (!isOnFlag()) {
-				Element newElement = new Element();
-				newElement.value = v;
-				newElement.left = this.current.left;
-				newElement.right = this.current;
-				this.current.left.right = newElement;
-				this.current.left = newElement;
-			}
+			Element newElement = new Element();
+			newElement.value = v;
+			newElement.left = this.current.left;
+			newElement.right = this.current;
+			this.current.left.right = newElement;
+			this.current.left = newElement;
+			this.current = newElement;
 		}
 
 		/**
@@ -128,14 +127,13 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 élement à ajouter
 		 */
 		public void addRight(T v) {
-			if (!isOnFlag()) {
-				Element newElement = new Element();
-				newElement.value = v;
-				newElement.left = this.current;
-				newElement.right = this.current.right;
-				this.current.right.left = newElement;
-				this.current.right = newElement;
-			}
+			Element newElement = new Element();
+			newElement.value = v;
+			newElement.left = this.current;
+			newElement.right = this.current.right;
+			this.current.right.left = newElement;
+			this.current.right = newElement;
+			this.current = newElement;
 		}
 
 		/**
