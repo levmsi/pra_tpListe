@@ -291,9 +291,23 @@ public class MySet implements L3Set<Integer> {
 	 * @param otherSet deuxième ensemble
 	 * @return true si les ensembles this et otherSet sont égaux, false sinon
 	 */
-	public boolean equals(MySet otherSet) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+	public boolean equals(MySet otherSet) {	
+		if (this == otherSet) {
+			return true;
+		}
+		if (this.size() != otherSet.size()) {
+			return false;
+		}
+		L3Iterator<SubSet> it1 = this.list.l3Iterator();
+		L3Iterator<SubSet> it2 = otherSet.list.l3Iterator();
+		while (!it1.isOnFlag() && !it2.isOnFlag()) {
+			if (it1.getValue().rank != it2.getValue().rank || !it1.getValue().set.equals(it2.getValue().set)) {
+				return false;
+			}
+			it1.goForward();
+			it2.goForward();
+		}
+		return it1.isOnFlag() && it2.isOnFlag();
 	}
 
 	/**
