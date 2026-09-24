@@ -112,13 +112,15 @@ public class MySet implements L3Set<Integer> {
 			return false;
 		}
 		int val = (Integer) value;
-		Iterator<Integer> it = iterator();
-		while (it.hasNext()) {
-			if (it.next().intValue() == val) {
-				return true;
-			}
-		}
-		return false ;
+		int r = Math.floorDiv(val, SmallSet.SET_SIZE);
+    	int m = Math.floorMod(val, SmallSet.SET_SIZE);
+		L3Iterator<SubSet> it = list.l3Iterator();
+
+		while (!it.isOnFlag() && it.getValue().rank < r) {
+        	it.goForward();
+    	}
+
+    	return !it.isOnFlag() && it.getValue().rank == r && it.getValue().set.contains(m);
 	}
 	/**
 	 * Ajouter element à this,
@@ -132,13 +134,16 @@ public class MySet implements L3Set<Integer> {
 			int r = Math.floorDiv(value, SmallSet.SET_SIZE);
 			int m = Math.floorMod(value, SmallSet.SET_SIZE);
 
-			while(it.getValue().rank < r){
+			while(!it.isOnFlag() && it.getValue().rank < r){
 				it.goForward();
 			}
-			if(it.getValue().rank != r ){
-				it.addLeft(new SubSet(r , new SmallSet()));
-			}
-			it.getValue().set.add(m);	
+			if (!it.isOnFlag() && it.getValue().rank == r) {
+				it.getValue().set.add(m);
+			} else {
+				SubSet newSub = new SubSet(r, new SmallSet());
+				newSub.set.add(m);
+				it.addLeft(newSub);
+    		}	
 		}
 	}
 
@@ -154,10 +159,10 @@ public class MySet implements L3Set<Integer> {
 			int r = Math.floorDiv(value, SmallSet.SET_SIZE);
 			int m = Math.floorMod(value, SmallSet.SET_SIZE);
 
-			while(it.getValue().rank < r){
+			while(!it.isOnFlag() && it.getValue().rank < r){
 				it.goForward();
 			}
-			if(it.getValue().rank == r){
+			if(!it.isOnFlag() && it.getValue().rank == r){
 				it.getValue().set.remove(m);
 				if(it.getValue().set.isEmpty()){
 					it.remove();

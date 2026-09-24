@@ -90,9 +90,6 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public T getValue() {
-			if (isOnFlag()) {
-				throw new java.util.NoSuchElementException();
-			}
 			return this.current.value;
 		}
 
@@ -142,9 +139,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 valeur de l'élément à initialiser
 		 */
 		public void setValue(T v) {
-			if (!isOnFlag()) {
-				this.current.value = v;
-			}
+			this.current.value = v;
 		}
 	}
 
