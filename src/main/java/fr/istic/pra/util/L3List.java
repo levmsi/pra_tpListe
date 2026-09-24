@@ -89,9 +89,9 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public T getValue() {
-			// if (isOnFlag()) {
-			// 	throw new java.util.NoSuchElementException();
-			// }
+			if (isOnFlag()) {
+				throw new java.util.NoSuchElementException();
+			}
 			return this.current.value;
 		}
 
