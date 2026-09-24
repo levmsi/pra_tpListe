@@ -108,12 +108,16 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public boolean contains(Object value) {
-		if (!(value instanceof Integer)) {
+		Iterator<Integer> it = iterator() ; 
+		if(!(value instanceof Integer)){
 			return false;
 		}
-		Integer intValue = (Integer) value;
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		return false;
+		while (it.hasNext() ) {
+			if (it.next() == value){
+				return true; 
+			}
+		}
+		return false ; 
 	}
 
 	/**
@@ -123,8 +127,19 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public void add(Integer value) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		if (! contains(value)){
+			L3Iterator<SubSet> it = list.l3Iterator(); 
+			int r = Math.floorDiv(value, SmallSet.SET_SIZE);
+			int m = Math.floorMod(value, SmallSet.SET_SIZE);
+
+			while(it.getValue().rank < r){
+				it.goForward();
+			}
+			if(it.getValue().rank != r ){
+				it.addLeft(new SubSet(r , new SmallSet()));
+			}
+			it.getValue().set.add(m);	
+		}
 	}
 
 	/**
@@ -134,8 +149,21 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public void remove(Integer value) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		if(contains(value)){
+			L3Iterator<SubSet> it = list.l3Iterator();
+			int r = Math.floorDiv(value, SmallSet.SET_SIZE);
+			int m = Math.floorMod(value, SmallSet.SET_SIZE);
+
+			while(it.getValue().rank < r){
+				it.goForward();
+			}
+			if(it.getValue().rank == r){
+				it.getValue().set.remove(m);
+				if(it.getValue().set.isEmpty()){
+					it.remove();
+				}
+			}
+		}
 	}
 
 	/**
@@ -143,8 +171,8 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public void clear() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		this.list = new L3List<>();
+		this.list.setFlag(new SubSet(MAX_RANG, new SmallSet()));	
 	}
 
 	/**
@@ -157,8 +185,13 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public int size() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		int size = 0;
+		L3Iterator<SubSet> it = list.l3Iterator();
+		while (!it.isOnFlag()) {
+			size += it.getValue().set.size();
+			it.goForward();
+		}
+		return size;
 	}
 
 	// -------------------------------------------------------------------------- //
@@ -187,8 +220,17 @@ public class MySet implements L3Set<Integer> {
 	 * @param otherSet deuxième ensemble
 	 */
 	public void symmetricDifference(MySet otherSet) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		if (this == otherSet) {
+			this.clear();
+			return;
+		}
+		for (Integer v : otherSet) {
+			if (this.contains(v)) {
+				this.remove(v);
+			} else {
+				this.add(v);
+			}
+		}
 	}
 
 
@@ -213,8 +255,12 @@ public class MySet implements L3Set<Integer> {
 	 * @param otherSet deuxième ensemble
 	 */
 	public void union(MySet otherSet) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		if (this == otherSet) {
+			return;
+		}
+		for (Integer v : otherSet) {
+			this.add(v);
+		}
 	}
 
 	// ---------------------------------------------------------------------------- //
