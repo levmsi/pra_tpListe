@@ -1,0 +1,411 @@
+-------------------------------------------------------------------------------
+Test set: fr.istic.pra.myset.TestMySet
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 0, Errors: 35, Skipped: 0, Time elapsed: 0.156 s <<< FAILURE! -- in fr.istic.pra.myset.TestMySet
+fr.istic.pra.myset.TestMySet.testSize1 -- Time elapsed: 0.049 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSize1(TestMySet.java:229)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSize2 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSize2(TestMySet.java:237)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSize3 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSize3(TestMySet.java:264)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSetCreation -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSetCreation(TestMySet.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testContainment1 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testContainment1(TestMySet.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testContainment2 -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testContainment2(TestMySet.java:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference1 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference1(TestMySet.java:334)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference2 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference2(TestMySet.java:343)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference3 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference3(TestMySet.java:352)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference4 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference4(TestMySet.java:369)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference5 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference5(TestMySet.java:386)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference6 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference6(TestMySet.java:394)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference7 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference7(TestMySet.java:401)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSymmetricDifference8 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference8(TestMySet.java:411)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testSetAddition -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSetAddition(TestMySet.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval1 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval1(TestMySet.java:167)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval2 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval2(TestMySet.java:177)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval3 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval3(TestMySet.java:191)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval4 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval4(TestMySet.java:200)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval5 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval5(TestMySet.java:211)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testRemoval6 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval6(TestMySet.java:220)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality1 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality1(TestMySet.java:432)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality2 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality2(TestMySet.java:439)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality3 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality3(TestMySet.java:447)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality4 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality4(TestMySet.java:455)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality5 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality5(TestMySet.java:463)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality6 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality6(TestMySet.java:471)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality7 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality7(TestMySet.java:483)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality8 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality8(TestMySet.java:496)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testEquality9 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality9(TestMySet.java:510)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testUnion1 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion1(TestMySet.java:274)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testUnion2 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion2(TestMySet.java:283)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testUnion3 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testUnion3(TestMySet.java:292)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testUnion4 -- Time elapsed: 0 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testUnion4(TestMySet.java:310)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+fr.istic.pra.myset.TestMySet.testUnion5 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion5(TestMySet.java:324)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

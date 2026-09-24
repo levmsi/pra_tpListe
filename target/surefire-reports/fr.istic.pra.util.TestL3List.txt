@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.istic.pra.util.TestL3List
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in fr.istic.pra.util.TestL3List

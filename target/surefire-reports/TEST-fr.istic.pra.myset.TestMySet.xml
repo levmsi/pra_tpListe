@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="fr.istic.pra.myset.TestMySet" time="0.156" tests="35" errors="35" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="H:\Documents\L3\PRA\TP2\pra_tpListe\target\test-classes;H:\Documents\L3\PRA\TP2\pra_tpListe\target\classes;C:\Users\ykhelfaoui\.m2\repository\fr\istic\pra\lib-tp-listes\2.0-SNAPSHOT\lib-tp-listes-2.0-SNAPSHOT.jar;C:\Users\ykhelfaoui\.m2\repository\org\knowm\xchart\xchart\3.8.8\xchart-3.8.8.jar;C:\Users\ykhelfaoui\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\ykhelfaoui\.m2\repository\de\rototor\pdfbox\graphics2d\3.0.1\graphics2d-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\pdfbox\3.0.1\pdfbox-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.1\pdfbox-io-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\fontbox\3.0.1\fontbox-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ykhelfaoui\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\ykhelfaoui\AppData\Local\Temp\surefire6966820240207577998\surefirebooter-20260924162232102_3.jar C:\Users\ykhelfaoui\AppData\Local\Temp\surefire6966820240207577998 2026-09-24T16-22-31_959-jvmRun1 surefire-20260924162232102_1tmp surefire_0-20260924162232102_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="H:\Documents\L3\PRA\TP2\pra_tpListe\target\test-classes;H:\Documents\L3\PRA\TP2\pra_tpListe\target\classes;C:\Users\ykhelfaoui\.m2\repository\fr\istic\pra\lib-tp-listes\2.0-SNAPSHOT\lib-tp-listes-2.0-SNAPSHOT.jar;C:\Users\ykhelfaoui\.m2\repository\org\knowm\xchart\xchart\3.8.8\xchart-3.8.8.jar;C:\Users\ykhelfaoui\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\ykhelfaoui\.m2\repository\de\rototor\pdfbox\graphics2d\3.0.1\graphics2d-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\pdfbox\3.0.1\pdfbox-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\pdfbox-io\3.0.1\pdfbox-io-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\org\apache\pdfbox\fontbox\3.0.1\fontbox-3.0.1.jar;C:\Users\ykhelfaoui\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ykhelfaoui\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\ykhelfaoui\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ykhelfaoui"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="H:\Documents\L3\PRA\TP2\pra_tpListe"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ykhelfaoui\AppData\Local\Temp\surefire6966820240207577998\surefirebooter-20260924162232102_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS"/>
+    <property name="user.name" value="ykhelfaoui"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.3+9"/>
+    <property name="localRepository" value="C:\Users\ykhelfaoui\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\YKHELF~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="H:\Documents\L3\PRA\TP2\pra_tpListe"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\PowerShell\7;c:\Users\ykhelfaoui\AppData\Local\Code-LocalData\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\ykhelfaoui\AppData\Local\Code-LocalData\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\;C:\Program Files\OpenSSH\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\wapt;C:\Program Files\OpenSSH;C:\Program Files\7-Zip;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\KeePassXC\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Program Files\VSCodium\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\nodejs\;C:\Users\ykhelfaoui\AppData\Local\Microsoft\WindowsApps;c:\ProgramData\Microsoft VS Code\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testSize1" classname="fr.istic.pra.myset.TestMySet" time="0.049">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSize1(TestMySet.java:229)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSize2" classname="fr.istic.pra.myset.TestMySet" time="0.002">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSize2(TestMySet.java:237)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSize3" classname="fr.istic.pra.myset.TestMySet" time="0.002">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSize3(TestMySet.java:264)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSetCreation" classname="fr.istic.pra.myset.TestMySet" time="0.003">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSetCreation(TestMySet.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testContainment1" classname="fr.istic.pra.myset.TestMySet" time="0.002">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testContainment1(TestMySet.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testContainment2" classname="fr.istic.pra.myset.TestMySet" time="0.003">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testContainment2(TestMySet.java:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference1" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference1(TestMySet.java:334)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference2" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference2(TestMySet.java:343)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference3" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference3(TestMySet.java:352)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference4" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference4(TestMySet.java:369)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference5" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference5(TestMySet.java:386)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference6" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference6(TestMySet.java:394)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference7" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference7(TestMySet.java:401)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSymmetricDifference8" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testSymmetricDifference8(TestMySet.java:411)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testSetAddition" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testSetAddition(TestMySet.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval1" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval1(TestMySet.java:167)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval2" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval2(TestMySet.java:177)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval3" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval3(TestMySet.java:191)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval4" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testRemoval4(TestMySet.java:200)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval5" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval5(TestMySet.java:211)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testRemoval6" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testRemoval6(TestMySet.java:220)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality1" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality1(TestMySet.java:432)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality2" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality2(TestMySet.java:439)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality3" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality3(TestMySet.java:447)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality4" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality4(TestMySet.java:455)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality5" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testEquality5(TestMySet.java:463)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality6" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality6(TestMySet.java:471)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality7" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality7(TestMySet.java:483)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality8" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality8(TestMySet.java:496)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testEquality9" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testEquality9(TestMySet.java:510)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testUnion1" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion1(TestMySet.java:274)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testUnion2" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion2(TestMySet.java:283)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testUnion3" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testUnion3(TestMySet.java:292)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testUnion4" classname="fr.istic.pra.myset.TestMySet" time="0.0">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.testUnion4(TestMySet.java:310)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="testUnion5" classname="fr.istic.pra.myset.TestMySet" time="0.001">
+    <error message="Unresolved compilation problem: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problem: 
+	Syntax error, insert "}" to complete MethodBody
+
+	at fr.istic.pra.myset.MySet.<init>(MySet.java:121)
+	at fr.istic.pra.myset.TestMySet.readFileToMySet(TestMySet.java:128)
+	at fr.istic.pra.myset.TestMySet.testUnion5(TestMySet.java:324)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+</testsuite>

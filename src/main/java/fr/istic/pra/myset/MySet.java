@@ -108,18 +108,18 @@ public class MySet implements L3Set<Integer> {
 	 */
 	@Override
 	public boolean contains(Object value) {
-		Iterator<Integer> it = iterator() ; 
-		if(!(value instanceof Integer)){
+		if (!(value instanceof Integer)) {
 			return false;
 		}
-		while (it.hasNext() ) {
-			if (it.next() == value){
-				return true; 
+		int val = (Integer) value;
+		Iterator<Integer> it = iterator();
+		while (it.hasNext()) {
+			if (it.next().intValue() == val) {
+				return true;
 			}
 		}
-		return false ; 
+		return false ;
 	}
-
 	/**
 	 * Ajouter element à this,
 	 *
