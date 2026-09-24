@@ -1,0 +1,177 @@
+package fr.istic.pra.myset;
+
+import java.util.Iterator;
+import java.util.Arrays;
+
+import fr.istic.pra.util.L3Set;
+
+/**
+ * Implémentation de référence de {@link SmallSet} sur un tableau de booléens.
+ * Fournie uniquement dans le module « solution » : elle n'est utilisée que si
+ * le profil « shadow » est actif (par défaut, c'est la version BitSet fournie
+ * dans lib-tp-listes qui est utilisée, difficilement battable en performance).
+ *
+ * <p>Cette classe porte le MÊME nom pleinement qualifié que la version de
+ * lib-tp-listes, ce qui permet de la substituer par shadowing (projet avant jar).</p>
+ */
+public class SmallSet implements L3Set<Integer> {
+	static {
+		// Affichage d'un message pour indiquer que votre version de SmallSet est utilisée
+		System.out.println("SmallSet : version étudiant");
+	}
+
+	/** taille de l'ensemble */
+	public static final int SET_SIZE = 256;
+
+	/** Ensemble représenté par un tableau de booléens d'appartenance. */
+	private final boolean[] tab;
+
+
+	public SmallSet() {
+		tab = new boolean[SET_SIZE];
+		Arrays.fill(tab, false);
+	}
+
+	public SmallSet(SmallSet set) {
+		tab = Arrays.copyOf(set.tab, SET_SIZE);
+	}
+
+	@Override
+	public Iterator<Integer> iterator() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public L3Set<Integer> copy() {
+		return new SmallSet(this);
+	}
+
+	@Override
+	public int size() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public boolean isEmpty() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public boolean contains(Object x) {
+		if (!(x instanceof Integer)) {
+			return false;
+		}
+		int xi = (Integer) x;
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public void add(Integer x) {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public void remove(Integer x) {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	/**
+	 * Ajoute à l'ensemble les valeurs deb, deb+1, ..., fin.
+	 */
+	public void addInterval(int deb, int fin) {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	/**
+	 * Retire de l'ensemble les valeurs deb, deb+1, ..., fin.
+	 */
+	public void removeInterval(int deb, int fin) {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public void union(L3Set<Integer> set2) {
+		if (set2 instanceof SmallSet otherSet) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		} else {
+			L3Set.super.union(set2);
+		}
+	}
+
+	@Override
+	public void intersection(L3Set<Integer> set2) {
+		if (set2 instanceof SmallSet otherSet) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		} else {
+			L3Set.super.intersection(set2);
+		}
+	}
+
+	@Override
+	public void difference(L3Set<Integer> set2) {
+		if (set2 instanceof SmallSet otherSet) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		} else {
+			L3Set.super.difference(set2);
+		}
+	}
+
+	@Override
+	public void symmetricDifference(L3Set<Integer> set2) {
+		if (set2 instanceof SmallSet otherSet) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		} else {
+			L3Set.super.symmetricDifference(set2);
+		}
+	}
+
+	/**
+	 * this devient le complément de this.
+	 */
+	public void complement() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public void clear() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+
+	@Override
+	public boolean isIncludedIn(L3Set<Integer> set2) {
+		if (set2 instanceof SmallSet otherSet) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		}
+		return L3Set.super.isIncludedIn(set2);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof SmallSet other) {
+			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+			throw new UnsupportedOperationException("À vous de l'implémenter");
+		}
+		return L3Set.super.equals(obj);
+	}
+
+	@Override
+	public String toString() {
+		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
+		throw new UnsupportedOperationException("À vous de l'implémenter");
+	}
+}

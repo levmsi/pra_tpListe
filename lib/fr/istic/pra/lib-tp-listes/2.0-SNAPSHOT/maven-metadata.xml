@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>fr.istic.pra</groupId>
+  <artifactId>lib-tp-listes</artifactId>
+  <versioning>
+    <lastUpdated>20260915183910</lastUpdated>
+    <snapshot>
+      <timestamp>20260915.183910</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>2.0-20260915.183910-1</value>
+        <updated>20260915183910</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.0-20260915.183910-1</value>
+        <updated>20260915183910</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>2.0-20260915.183910-1</value>
+        <updated>20260915183910</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>2.0-SNAPSHOT</version>
+</metadata>

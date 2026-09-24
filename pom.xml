@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>fr.istic.pra</groupId>
+  <artifactId>pra-tp-listes</artifactId>
+  <version>1.0</version>
+
+  <name>pra-tp-listes</name>
+  <url>https://gitlab2.istic.univ-rennes1.fr/pra-enseignants/tp-listes</url>
+  <description>Projet Maven pour le TP sur les listes du module PRA en L3 Info à l'ISTIC (Université de Rennes).</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+    <exec.mainClass>fr.istic.pra.myset.MySetPlayground</exec.mainClass>
+  </properties>
+
+  <repositories>
+    <!-- Dépôt local fournissant la bibliothèque lib-tp-listes -->
+    <repository>
+      <id>local-pra-tp-listes</id>
+      <url>file://${project.basedir}/lib</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <!-- Bibliothèque fournie (briques de base du TP) -->
+    <dependency>
+      <groupId>fr.istic.pra</groupId>
+      <artifactId>lib-tp-listes</artifactId>
+      <version>2.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- XChart pour l'affichage graphique des benchmarks -->
+    <dependency>
+      <groupId>org.knowm.xchart</groupId>
+      <artifactId>xchart</artifactId>
+      <version>3.8.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.3.0</version>
+      </plugin>
+
+      <!-- Lancement des applications : mvn exec:java... -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <mainClass>${exec.mainClass}</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
