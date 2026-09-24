@@ -89,8 +89,10 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public T getValue() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			// if (isOnFlag()) {
+			// 	throw new java.util.NoSuchElementException();
+			// }
+			return this.current.value;
 		}
 
 		/**
@@ -99,8 +101,8 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public T nextValue() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			goForward();
+			return getValue();
 		}
 
 		/**
