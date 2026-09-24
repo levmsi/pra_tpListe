@@ -33,7 +33,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 * Créer un nouvel itérateur positionné sur le premier élément de la liste (ou sur la sentinelle si la liste est vide)
 		 */
 		private L3ListIterator() {
-			/* TODO: À vous de compléter ! */
+			this.current = flag;
 		}
 
 		/**
@@ -41,8 +41,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void goForward() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			this.current = this.current.right;
 		}
 
 		/**
@@ -50,8 +49,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void goBackward() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			this.current = this.current.left;
 		}
 
 		/**
@@ -59,8 +57,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void restart() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			this.current = flag;
 		}
 
 		/**
@@ -69,8 +66,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public boolean isOnFlag() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			return this.current == flag;
 		}
 
 		/**
@@ -78,8 +74,13 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void remove() {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			if (!isOnFlag()) {
+				Element left = this.current.left;
+				Element right = this.current.right;
+				left.right = right;
+				right.left = left;
+				this.current = right;
+			}
 		}
 
 		/**
