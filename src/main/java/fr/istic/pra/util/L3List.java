@@ -33,7 +33,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 * Créer un nouvel itérateur positionné sur le premier élément de la liste (ou sur la sentinelle si la liste est vide)
 		 */
 		private L3ListIterator() {
-			this.current = flag;
+			this.current = flag.right;
 		}
 
 		/**
@@ -57,7 +57,7 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void restart() {
-			this.current = flag;
+			this.current = flag.right;
 		}
 
 		/**
@@ -74,13 +74,14 @@ public class L3List<T> implements L3Sequence<T>{
 		 */
 		@Override
 		public void remove() {
-			if (!isOnFlag()) {
-				Element left = this.current.left;
-				Element right = this.current.right;
-				left.right = right;
-				right.left = left;
-				this.current = right;
+			if (isOnFlag()) {
+				throw new IllegalStateException("Impossible de supprimer la sentinelle");
 			}
+			Element left = this.current.left;
+			Element right = this.current.right;
+			left.right = right;
+			right.left = left;
+			this.current = right;
 		}
 
 		/**
@@ -190,11 +191,12 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @param v élément à ajouter
 	 */
 	public void addHead(T v) {
-		this.flag.right.left = new Element();
-		this.flag.right.left.value = v;
-		this.flag.right.left.left = this.flag;
-		this.flag.right.left.right = this.flag.right;
-		this.flag.right = this.flag.right.left;
+		Element e = new Element();
+		e.value = v;
+		e.left = flag;
+		e.right = flag.right;
+		flag.right.left = e;
+		flag.right = e;
 	}
 
 	/**
@@ -203,11 +205,12 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @param v élément à ajouter
 	 */
 	public void addTail(T v) {
-		this.flag.left.right = new Element();
-		this.flag.left.right.value = v;
-		this.flag.left.right.right = this.flag;
-		this.flag.left.right.left = this.flag.left;
-		this.flag.left = this.flag.left.right;
+		Element e = new Element();
+		e.value = v;
+		e.left = flag.left;
+		e.right = flag;
+		flag.left.right = e;
+		flag.left = e;
 	}
 
 	/**
