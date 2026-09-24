@@ -111,8 +111,14 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 élement à ajouter
 		 */
 		public void addLeft(T v) {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			if (!isOnFlag()) {
+				Element newElement = new Element();
+				newElement.value = v;
+				newElement.left = this.current.left;
+				newElement.right = this.current;
+				this.current.left.right = newElement;
+				this.current.left = newElement;
+			}
 		}
 
 		/**
@@ -121,8 +127,14 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 élement à ajouter
 		 */
 		public void addRight(T v) {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			if (!isOnFlag()) {
+				Element newElement = new Element();
+				newElement.value = v;
+				newElement.left = this.current;
+				newElement.right = this.current.right;
+				this.current.right.left = newElement;
+				this.current.right = newElement;
+			}
 		}
 
 		/**
@@ -131,8 +143,9 @@ public class L3List<T> implements L3Sequence<T>{
 		 * @param var1 valeur de l'élément à initialiser
 		 */
 		public void setValue(T v) {
-			/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-			throw new UnsupportedOperationException("À vous de l'implémenter");
+			if (!isOnFlag()) {
+				this.current.value = v;
+			}
 		}
 	}
 
@@ -140,7 +153,9 @@ public class L3List<T> implements L3Sequence<T>{
 	 * Créer une nouvelle L3List vide (sentinelle seule)
 	 */
 	public L3List() {
-		/* TODO: À vous de compléter ! */
+		this.flag = new Element();
+		this.flag.left = this.flag;
+		this.flag.right = this.flag;
 	}
 
 	/**
@@ -149,8 +164,7 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @return un nouvel iterateur sur la tête de la liste (ou sur la sentinelle si la liste est vide)
 	 */
 	public L3Iterator<T> l3Iterator() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		return new L3ListIterator();
 	}
 
 	/**
@@ -159,16 +173,15 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @return true si la liste est vide, false sinon
 	 */
 	public boolean isEmpty() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		return this.flag.left == this.flag && this.flag.right == this.flag; 
 	}
 
 	/**
 	 * Déreférence tous les éléments de la liste sauf la sentinelle
 	 */
 	public void clear() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		this.flag.left = this.flag;
+		this.flag.right = this.flag;
 	}
 
 	/**
@@ -177,8 +190,11 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @param v élément à ajouter
 	 */
 	public void addHead(T v) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		this.flag.right.left = new Element();
+		this.flag.right.left.value = v;
+		this.flag.right.left.left = this.flag;
+		this.flag.right.left.right = this.flag.right;
+		this.flag.right = this.flag.right.left;
 	}
 
 	/**
@@ -187,8 +203,11 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @param v élément à ajouter
 	 */
 	public void addTail(T v) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		this.flag.left.right = new Element();
+		this.flag.left.right.value = v;
+		this.flag.left.right.right = this.flag;
+		this.flag.left.right.left = this.flag.left;
+		this.flag.left = this.flag.left.right;
 	}
 
 	/**
@@ -196,13 +215,17 @@ public class L3List<T> implements L3Sequence<T>{
 	 * @param v
 	 */
 	public void setFlag(T v) {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		this.flag.value = v;
 	}
 
 	@Override
 	public String toString() {
-		/* TODO: À vous de compléter ! (en attendant, on fait planter) */
-		throw new UnsupportedOperationException("À vous de l'implémenter");
+		StringBuilder sb = new StringBuilder();
+		L3Iterator<T> it = l3Iterator();
+		while (!it.isOnFlag()) {
+			sb.append(it.getValue()).append(" ");
+			it.goForward();
+		}
+		return sb.toString();
 	}
 }
